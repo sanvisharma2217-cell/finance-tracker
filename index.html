@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>Finance Tracker</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Finance Tracker </h1>
+            <p>Track your income, expenses and savings</p>
+        </header>
+
+        <section class="summary-cards">
+
+            <div class="card income">
+                <h3>Total Income</h3>
+                <p id="total-income">₹0</p>
+            </div>
+
+            <div class="card expense">
+                <h3>Total Expenses</h3>
+                <p id="total-expense">₹0</p>
+            </div>
+
+            <div class="card balance">
+                <h3>Balance</h3>
+                <p id="balance">₹0</p>
+            </div>
+
+        </section>
+
+        <section class="transaction-section">
+
+            <h2>Add Transaction</h2>
+
+            <form id="transaction-form">
+
+                <input
+                    type="text"
+                    id="description"
+                    placeholder="Description"
+                >
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Amount"
+                >
+                
+                <input
+                    type="date"
+                    id="date"
+                    >
+                    
+                <select id="type">
+                    <option value="">Select Type</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <select id="category">
+                    <option value="">Category</option>
+                    <option>Food</option>
+                    <option>Travel</option>
+                    <option>Shopping</option>
+                    <option>Bills</option>
+                    <option>Entertainment</option>
+                    <option>Other</option>
+                </select>
+
+                <button type="submit">
+                    Add Transaction
+                </button>
+
+            </form>
+
+        </section>
+<section class="filters">
+
+    <h2>Filter Transactions</h2>
+    <input
+    type="text"
+    id="search"
+    placeholder="Search by description or category..."
+>
+
+    <div class="filter-box">
+
+        <input
+            type="date"
+            id="filter-date"
+        >
+
+        <select id="filter-type">
+
+            <option value="all">All</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+
+        </select>
+
+        <select id="filter-category">
+
+            <option value="all">All Categories</option>
+            <option value="Food">Food</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Bills">Bills</option>
+            <option value="Travel">Travel</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Other">Other</option>
+
+        </select>
+
+        <button id="clear-filters">
+
+            Clear Filters
+
+        </button>
+
+    </div>
+
+</section>
+        <section class="transactions">
+
+            <h2>Transactions</h2>
+
+            <div id="transaction-list">
+
+            </div>
+
+        </section>
+
+        <section class="savings-goal">
+
+    <h2>Savings Goal</h2>
+
+    <div class="goal-box">
+
+        <input
+            type="number"
+            id="goal-input"
+            placeholder="Enter Savings Goal"
+        >
+
+        <button id="save-goal">
+            Save Goal
+        </button>
+
+        
+        <h3>
+    <span id="saved-amount">₹0</span> /
+    <span id="goal-amount">₹0</span>
+</h3>
+
+        <div class="progress-container">
+    <div
+        id="progress-fill"
+        class="progress-bar">
+    </div>
+</div>
+
+            
+
+        <p id="progress-percent">0%</p>
+
+    </div>
+
+</section>
+
+        <section class="charts">
+
+            <h2>Analytics</h2>
+
+            <div class="chart-container">
+            <canvas id="expenseChart"></canvas>
+            </div>
+
+        <h3>Monthly Income vs Expense</h3>
+
+        <div class="chart-container">
+    <canvas id="barChart"></canvas>
+</div>
+         <h3>Monthly Expense Trend</h3>
+
+<div class="chart-container">
+    <canvas id="lineChart"></canvas>
+</div>
+    
+</section>
+<section class="report-section">
+
+    <h2>Monthly Report</h2>
+
+    <div class="report-cards">
+
+        <div class="report-card">
+            <h3>Total Income</h3>
+            <p id="report-income">₹0</p>
+        </div>
+
+        <div class="report-card">
+            <h3>Total Expense</h3>
+            <p id="report-expense">₹0</p>
+        </div>
+
+        <div class="report-card">
+            <h3>Total Savings</h3>
+            <p id="report-savings">₹0</p>
+        </div>
+
+        <div class="report-card">
+            <h3>Transactions</h3>
+            <p id="report-transactions">0</p>
+        </div>
+
+    </div>
+
+    <button id="download-report">
+        Download PDF Report
+    </button>
+
+</section>
+
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="./js/storage.js"></script>
+<script src="./js/ui.js"></script>
+<script src="./js/analytics.js"></script>
+<script src="./js/charts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
