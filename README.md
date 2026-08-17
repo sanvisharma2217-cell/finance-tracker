@@ -1,4 +1,4 @@
-# 💰 Finance Tracker
+#  Finance Tracker
 
 A simple and user-friendly personal finance tracker built using HTML, CSS, and JavaScript.
 
@@ -46,7 +46,7 @@ finance-tracker/
 │   └── storage.js
 │
 ├── assets/
-## 🚀 How to Run
+## 🚀 **How to Run**
 
 No installation or backend setup is required.
 
@@ -55,7 +55,7 @@ No installation or backend setup is required.
 3. Open `index.html` in your web browser.
 4. Start adding your income and expense transactions.
 
-### Using VS Code
+### **Using VS Code**
 
 You can also run the project using **VS Code Live Server**:
 
@@ -63,7 +63,7 @@ You can also run the project using **VS Code Live Server**:
 2. Right-click on `index.html`.
 3. Select **Open with Live Server**.
 4. The Finance Tracker will open in your browser.
-## 💾 Data Storage
+## 💾 **Data Storage**
 
 The application uses **LocalStorage** to store transaction data directly in the browser.
 
@@ -71,7 +71,8 @@ The application uses **LocalStorage** to store transaction data directly in the 
 - No login is required.
 - Data remains available after refreshing the page.
 - Transactions are stored locally on the user's device.
-## 📊 Dashboard
+
+## 📊 **Dashboard**
 
 The dashboard provides a quick overview of the user's financial activity.
 
@@ -83,6 +84,42 @@ It displays:
 - Number of Transactions
 
 The dashboard also includes charts for better visualization of financial data.
+
+## 📄 **PDF Reports**
+
+Users can generate and download a financial report in PDF format.
+
+The report includes:
+
+- Total Income
+- Total Expenses
+- Total Savings
+- Number of Transactions
+
+This makes it easy to keep a record of financial activity.
+## 🎓 **Project Purpose**
+
+This project was developed to practice and demonstrate practical web development concepts.
+
+Key concepts used in this project include:
+
+- HTML & CSS
+- JavaScript
+- DOM Manipulation
+- Event Handling
+- CRUD Operations
+- LocalStorage
+- Data Filtering
+- Data Visualization
+- Chart.js
+- PDF Generation
+- Responsive Web Design
+
+##  **Author**
+
+**Sanvi Sharma**
+
+
 
 
 └── README.md
